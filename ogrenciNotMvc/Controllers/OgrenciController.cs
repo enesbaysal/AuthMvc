@@ -8,7 +8,7 @@ using ogrenciNotMvc.Models.EntityFramework;
 namespace ogrenciNotMvc.Controllers
 {
 
-    [Authorize]
+    [Authorize]      //  UserName  :: test  ///    Pasword :: 123 
     public class OgrenciController : Controller
     {
 
