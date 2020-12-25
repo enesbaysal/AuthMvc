@@ -1,0 +1,23 @@
+﻿@model ogrenciNotMvc.Models.EntityFramework.TableKulupler
+@{
+    ViewBag.Title = "YeniKulup";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Yeni Kulüp Ekleme Sayfası</h2>
+
+    <form method="post" class="form-group">
+        <div>
+            <label>Kulüp Adı</label>
+            <input type="text" class="form-control" name="kulupAd" /> 
+        </div>
+        <div style="margin-top:10px">
+            <label>Kulüp Kontenjanı</label>
+            <input type="text" class="form-control" name="kulupKontenjan" />
+        </div>
+        <div style="margin-top:10px">
+            <button class="alert">Kulüp Ekle </button>
+        </div>
+    </form>
+
+

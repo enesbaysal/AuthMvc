@@ -1,0 +1,18 @@
+﻿@model ogrenciNotMvc.Models.EntityFramework.TableDersler
+@{
+    ViewBag.Title = "YeniKayit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Yeni Kayıt Sayfası</h2>
+
+<form method="post" class="form-group">
+    <div>
+        <label>Ders Adı</label>
+        <input type="text"class="form-control" name="dersAd"/>
+    </div>
+    <div style="margin-top:10px">
+        <button class="alert">Ders Ekle </button>
+    </div>
+</form>
+

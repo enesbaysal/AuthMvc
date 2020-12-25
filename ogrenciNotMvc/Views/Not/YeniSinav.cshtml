@@ -1,0 +1,49 @@
+﻿@model ogrenciNotMvc.Models.EntityFramework.TableNotlar
+@{
+    ViewBag.Title = "YeniSinav";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+    <form method="post" class="form-group">
+        <div>
+            <label>Öğrenci ID</label>
+            <input type="text" class="form-control" name="ogrID" />
+        </div>
+
+        <div style="margin-top:10px">
+            <label>Ders Adı</label>
+            <input type="text" class="form-control" name="dersID" />
+        </div>
+
+        <div style="margin-top:10px">
+            <label>1. Sınav</label>
+            <input type="text" class="form-control" name="Sinav1" />
+        </div>
+
+        <div style="margin-top:10px">
+            <label>2. Sınav</label>
+            <input type="text" class="form-control" name="Sinav2" />
+        </div>
+
+        <div style="margin-top:10px">
+            <label>3. Sınav</label>
+            <input type="text" class="form-control" name="Sinav3" />
+        </div>
+
+        <div style="margin-top:10px">
+            <label>Proje</label>
+            <input type="text" class="form-control" name="Proje" />
+        </div>
+
+        <div style="margin-top:10px">
+            <label>Durum</label>
+            <input type="text" class="form-control" name="Durum" />
+        </div>
+
+        <div style="margin-top:10px">
+
+            <button class="btn btn-bottom">Sınav Ekle</button>
+        </div>
+
+    </form>
+

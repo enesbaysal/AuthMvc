@@ -1,0 +1,22 @@
+﻿@model ogrenciNotMvc.Models.EntityFramework.TableDersler
+@{
+    ViewBag.Title = "Dersget";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Ders Güncelleme Sayfası</h2>
+
+@using (Html.BeginForm("Guncelle", "Default", FormMethod.Post))
+{
+    <div class="form-group">
+        @Html.LabelFor(m=>m.dersAd)
+        @Html.TextBoxFor(m=>m.dersAd , new { @class = "form-Control" })
+
+    </div>
+    @Html.HiddenFor(m=>m.dersID)    
+    <div style="margin-top:15px">
+        <button class="btn btn-info">Güncelle</button>
+    </div>
+}
+
+
